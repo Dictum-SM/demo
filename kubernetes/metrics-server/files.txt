@@ -1,0 +1,7 @@
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/aggregated-metrics-reader.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/auth-delegator.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/auth-reader.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/metrics-apiservice.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/metrics-server-deployment.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/metrics-server-service.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/metrics-server/resource-reader.yaml

@@ -39,6 +39,10 @@ The following components are deployed in this demo:
 
     `mkdir -p {terraform/eks-vpc,kubernetes/{metrics-server,dashboard}}`
 
-4. Download 
+4. Download Terraform configs
+
+   `wget -P terraform/eks-vpc/ -i https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/files.txt`
+
+5. 
 
 

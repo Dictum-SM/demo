@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/dashboard/kubernetes-dashboard-admin.rbac.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/dashboard/kustomization.yaml
+https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/dashboard/recommended.yaml
