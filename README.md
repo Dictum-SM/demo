@@ -70,7 +70,7 @@ Follow these steps to deploy the demo environment:
   k8s-dashboard-kubectlk: "kubernetes/dashboard/"
 ```
 *Note*: Mind your yaml spacing.  
-*Note*: Type `i` to edit and `wq!` to save and close.
+*Note*: Type `i` to edit and `<esc> :wq!` to save and close.
 
 10. Run Dictum-SM to deploy the environment and wait for completion:
 
@@ -110,7 +110,7 @@ Let's pretend that we dont want the dashboard to be deployed into our environmen
     `k8s-dashboard-kubectlk: "kubernetes/dashboard/"`
 
     *Note*: With your cursor on the line with the referenced kv pair, type `dd` to delete the entire line.  
-    *Note*: Type `wq!` to save and close
+    *Note*: Type `<esc> :wq!` to save and close
 
 3. Run Dictum-SM
 
