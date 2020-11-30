@@ -15,13 +15,13 @@ The following components are deployed in this demo:
 
 1. The following programs need to be available to the shell of the user running Dictum-SM:
 
-- yq
-- [kubectl](https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-kubectl/)
-- [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-- [aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-- [AWS IAM Authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
+- [yq 3.4x](https://github.com/mikefarah/yq/releases/latest)
+- [kubectl 1.18](https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-kubectl/)
+- [terraform 0.13.x](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- [aws cli 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+- [AWS IAM Authenticator 1.18.9](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 - wget
-- Dictum CLI
+- [Dictum CLI](https://github.com/Dictum-SM/dictum-cli/releases/tag/v0.0.0.2)
 
 2. AWS cli needs to be configured. Make sure that the output format is json (as seen [here](https://learn.hashicorp.com/tutorials/terraform/eks#prerequisites))
 
