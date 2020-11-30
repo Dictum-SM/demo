@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: state
+  namespace: dictum-sm
+# Set KV pairs below the "data" section.
+# DSM natively supported key suffixes and corresponding actions are:
+# kubectlf: "kubectl <apply/delete> -f <resource>"
+# kubectlk: "kubectl <apply/delete> -k <resource>"
+# kbuild: "kustomize build <resource> | kubectl <apply/delete> -f -"
+# terraform: first performs "terraform init -input=false <resource>" and 
+# then "terraform apply/destroy -input=false -auto-approve <resource>".
+# playbook: ansible-playbook --extra-vars "<operation=apply/delete> <resource>"
+# bash: Executes the referenced script verbatim.
+# Note Bash is a special resource type that does not have a corresponding delete action.
+data:
+  aws-eks-vp-terraform: "terraform/eks-vpc/"
+  set-kube-context-bash: "utilities/scripts/set-kube-context.sh"
+  metrics-server-kubectlf: "kubernetes/metrics-server/"
+  k8s-dashboard-kubectlk: "kubernetes/dashboard/"
