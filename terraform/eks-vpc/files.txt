@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/eks-cluster.tf
+https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/kubernetes.tf
+https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/outputs.tf 
+https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/security-groups.tf
+https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/versions.tf
+https://raw.githubusercontent.com/Dictum-SM/demo/main/terraform/eks-vpc/vpc.tf
