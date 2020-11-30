@@ -16,10 +16,10 @@ The following components are deployed in this demo:
 1. The following programs need to be available to the shell of the user running Dictum-SM:
 
 - yq
-- kubectl
-- terraform
-- aws cli
-- AWS IAM Authenticator
+- [kubectl](https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-kubectl/)
+- [terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- [aws cli](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+- [AWS IAM Authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 - wget
 - Dictum CLI
 
