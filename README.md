@@ -53,11 +53,15 @@ Follow these steps to deploy the demo environment:
 
    `wget -P kubernetes/dashboard/ -i https://raw.githubusercontent.com/Dictum-SM/demo/main/kubernetes/dashboard/files.txt`
 
-7. Open the State file for editing:
+7. Download the kube-context helper script:
+
+    `wget -P utilities/scripts/ https://raw.githubusercontent.com/Dictum-SM/demo/main/utilities/scripts/set-kube-context.sh`
+
+8. Open the State file for editing:
 
    `dictum-cli define`
 
-8. Under the `data:` section, remove the example kv pairs and add the following in order:
+9. Under the `data:` section, remove the example kv pairs and add the following in order:
 
 ```
   aws-eks-vp-terraform: "terraform/eks-vpc/"
@@ -68,27 +72,29 @@ Follow these steps to deploy the demo environment:
 *Note*: Mind your yaml spacing.  
 *Note*: Type `i` to edit and `wq!` to save and close.
 
-9. Run Dictum-SM to deploy the environment and wait for completion:
+10. Run Dictum-SM to deploy the environment and wait for completion:
 
    `dictum-cli run`
 
-10. View your cluster:
+   *Note:* Hashicorp says that this takes 10min. I guestimate closer to 15. YMMV.
+
+11. View your cluster:
 
     `kubectl get pods -A`
 
-11. Get dashboard token and save for later:
+12. Get dashboard token and save for later:
 
     `kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep service-controller-token | awk '{print $1}')`
 
-12. Create your the proxy:
+13. Create your the proxy:
 
     `kubectl proxy`
 
-13. From your browser, browse to dashboard:
+14. From your browser, browse to dashboard:
 
     `http://127.0.0.1:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/`
 
-14. Select token authentication, input the token retrieved by step 11, and login.
+15. Select token authentication, input the token retrieved by step 11, and login.
 
 
 ## Manage
