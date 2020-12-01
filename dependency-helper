@@ -1,5 +1,16 @@
 
-DEMO_PATH=$(mkdir $PWD/bin)
-export PATH=$PATH:$DEMO_PATH
-wget -P $HOME/bin -i https://raw.githubusercontent.com/Dictum-SM/demo/main/dependencies.txt
+DEMO_DEPS=$PWD/bin
 
+wget -P $DEMO_DEPS -i https://raw.githubusercontent.com/Dictum-SM/demo/main/dependencies.txt
+
+cd bin
+
+unzip terraform_0.13.5_linux_amd64.zip
+rm -f terraform_0.13.5_linux_amd64.zip
+chmod +x aws-iam-authenticator
+mv yq_linux_amd64 yq
+chmod +x yq
+chmod +x dictum-cli
+chmod +x kubectl
+
+cd -
