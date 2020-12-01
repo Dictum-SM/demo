@@ -1,0 +1,7 @@
+https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/aws-iam-authenticator
+https://github.com/mikefarah/yq/releases/download/3.4.1/yq_linux_amd64
+https://storage.googleapis.com/kubernetes-release/release/stable/bin/linux/amd64/kubectl
+https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_amd64.zip
+https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+https://github.com/Dictum-SM/dictum-cli/releases/download/v0.0.0.2/dictum-cli
+

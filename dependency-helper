@@ -1,0 +1,5 @@
+
+DEMO_PATH=$(mkdir $PWD/bin)
+export PATH=$PATH:$DEMO_PATH
+wget -P $HOME/bin -i https://raw.githubusercontent.com/Dictum-SM/demo/main/dependencies.txt
+
